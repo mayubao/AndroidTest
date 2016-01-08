@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 public class MyService extends Service {
 
-    private static final String TAG = "com.likefunnythings.aidlserver" + MyService.class.getSimpleName();
+    private static final String TAG = "com.likefunnythings.aidlserver." + MyService.class.getSimpleName();
     Context context;
 
     IBinder binder = new IAidlService.Stub(){
