@@ -86,12 +86,13 @@ public class AnimationActivity extends ActionBarActivity implements View.OnClick
                 break;
             }
             default:
-
-
         }
     }
 
 
+    /**
+     * Andriod 上面避免使用Enum枚举类型
+     */
     enum AnimationType{
         ALPHA,//透明度变换
         SCALE,//缩放变换
