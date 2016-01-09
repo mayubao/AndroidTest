@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.likefunnythings.androidtest.R;
 
@@ -46,7 +47,15 @@ public class BitmapActivity extends ActionBarActivity implements View.OnClickLis
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.btn:
+
+
+
                 String size = et.getText().toString();
+                if(null == size || "".equals(size)){
+                    Toast.makeText(this, "请输入放缩的尺寸", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
                 BitmapFactory.Options options = new BitmapFactory.Options();
                 options.inJustDecodeBounds = true;
                 BitmapFactory.decodeResource(getResources(), R.drawable.ic_launcher, options);

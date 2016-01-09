@@ -43,7 +43,7 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Bitmap"
+                android:text="Bitmap缩放测试"
                 android:id="@+id/btn_bitmap"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
