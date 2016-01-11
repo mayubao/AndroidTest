@@ -11,5 +11,6 @@
     <string name="title_activity_launch_mode_test">LaunchModeTestActivity</string>
     <string name="title_activity_bitmap">BitmapActivity</string>
     <string name="title_activity_broadcase_reciver">BroadcaseReciverActivity</string>
+    <string name="title_activity_custome_view">CustomeViewActivity</string>
 
 </resources>

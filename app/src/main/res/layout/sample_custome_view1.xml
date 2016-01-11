@@ -1,0 +1,16 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.likefunnythings.androidtest.view.CustomeView1
+        android:background="#ccc"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:paddingLeft="20dp"
+        android:paddingBottom="40dp"
+        app:titleTextSize="24sp"
+        app:titleTextColor="#ff0000"
+        app:title="Hello, CustomeView1"/>
+
+</FrameLayout>

@@ -56,6 +56,10 @@
             android:name=".ui.BroadcastReciverActivity"
             android:label="@string/title_activity_broadcase_reciver" >
         </activity>
+        <activity
+            android:name=".ui.CustomeView1Activity"
+            android:label="@string/title_activity_custome_view" >
+        </activity>
     </application>
 
 </manifest>

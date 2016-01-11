@@ -18,6 +18,7 @@ public class HomeActivity extends ActionBarActivity implements View.OnClickListe
     Button btn_launch_mode;
     Button btn_bitmap;
     Button btn_broadcast_receiver;
+    Button btn_custome_view1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,12 +37,14 @@ public class HomeActivity extends ActionBarActivity implements View.OnClickListe
         btn_launch_mode = (Button) this.findViewById(R.id.btn_launch_mode);
         btn_bitmap = (Button) this.findViewById(R.id.btn_bitmap);
         btn_broadcast_receiver = (Button) this.findViewById(R.id.btn_broadcast_receiver);
+        btn_custome_view1 = (Button) this.findViewById(R.id.btn_custome_view1);
 
         btn_screen_orientation.setOnClickListener(this);
         btn_animation_test.setOnClickListener(this);
         btn_launch_mode.setOnClickListener(this);
         btn_bitmap.setOnClickListener(this);
         btn_broadcast_receiver.setOnClickListener(this);
+        btn_custome_view1.setOnClickListener(this);
     }
 
     @Override
@@ -66,6 +69,10 @@ public class HomeActivity extends ActionBarActivity implements View.OnClickListe
            }
            case R.id.btn_broadcast_receiver:{
                startActivity(BroadcastReciverActivity.class);
+               break;
+           }
+           case R.id.btn_custome_view1:{
+               startActivity(CustomeView1Activity.class);
                break;
            }
 

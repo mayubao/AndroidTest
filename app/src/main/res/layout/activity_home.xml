@@ -58,7 +58,15 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true" />
-
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="自定义View1"
+                android:id="@+id/btn_custome_view1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
