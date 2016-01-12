@@ -19,6 +19,7 @@ public class HomeActivity extends ActionBarActivity implements View.OnClickListe
     Button btn_bitmap;
     Button btn_broadcast_receiver;
     Button btn_custome_view1;
+    Button btn_custome_view2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +39,7 @@ public class HomeActivity extends ActionBarActivity implements View.OnClickListe
         btn_bitmap = (Button) this.findViewById(R.id.btn_bitmap);
         btn_broadcast_receiver = (Button) this.findViewById(R.id.btn_broadcast_receiver);
         btn_custome_view1 = (Button) this.findViewById(R.id.btn_custome_view1);
+        btn_custome_view2 = (Button) this.findViewById(R.id.btn_custome_view2);
 
         btn_screen_orientation.setOnClickListener(this);
         btn_animation_test.setOnClickListener(this);
@@ -45,6 +47,7 @@ public class HomeActivity extends ActionBarActivity implements View.OnClickListe
         btn_bitmap.setOnClickListener(this);
         btn_broadcast_receiver.setOnClickListener(this);
         btn_custome_view1.setOnClickListener(this);
+        btn_custome_view2.setOnClickListener(this);
     }
 
     @Override
@@ -75,7 +78,10 @@ public class HomeActivity extends ActionBarActivity implements View.OnClickListe
                startActivity(CustomeView1Activity.class);
                break;
            }
-
+           case R.id.btn_custome_view2:{
+               startActivity(CustomeImageViewActivity.class);
+               break;
+           }
            default:
        }
     }

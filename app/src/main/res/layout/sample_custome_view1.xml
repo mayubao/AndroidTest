@@ -9,8 +9,8 @@
         android:layout_height="300dp"
         android:paddingLeft="20dp"
         android:paddingBottom="40dp"
-        app:titleTextSize="24sp"
-        app:titleTextColor="#ff0000"
-        app:title="Hello, CustomeView1"/>
+        app:textSize="24sp"
+        app:textColor="#ff0000"
+        app:text="Hello, CustomeView1"/>
 
 </FrameLayout>

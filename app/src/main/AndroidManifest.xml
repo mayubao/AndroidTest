@@ -60,6 +60,10 @@
             android:name=".ui.CustomeView1Activity"
             android:label="@string/title_activity_custome_view" >
         </activity>
+        <activity
+            android:name=".ui.CustomeImageViewActivity"
+            android:label="@string/title_activity_custome_image_view" >
+        </activity>
     </application>
 
 </manifest>

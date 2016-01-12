@@ -12,5 +12,6 @@
     <string name="title_activity_bitmap">BitmapActivity</string>
     <string name="title_activity_broadcase_reciver">BroadcaseReciverActivity</string>
     <string name="title_activity_custome_view">CustomeViewActivity</string>
+    <string name="title_activity_custome_image_view">CustomeImageViewActivity</string>
 
 </resources>
