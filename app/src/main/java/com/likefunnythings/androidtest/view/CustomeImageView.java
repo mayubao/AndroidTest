@@ -13,6 +13,8 @@ import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.view.View;
 
+import com.likefunnythings.androidtest.R;
+
 
 /**
  * Created by Administrator on 2016/1/12.
@@ -65,28 +67,28 @@ public class CustomeImageView extends View{
 
         //获取Attr自定义的属性
         TypedArray a = null;
-//                = getContext().obtainStyledAttributes(attrs, R.styleable.CustomeImageView, defStyleAttr, 0);
-//        int index = a.getIndexCount();
-//        for(int i=0; i < index; index ++){
-//            int attr = a.getIndex(i);
-//            switch (attr){
-//                case R.styleable.CustomeImageView_img:
-//                    mBitmap = BitmapFactory.decodeResource(getResources(), a.getResourceId(R.styleable.CustomeImageView_img, 0));
-//                    break;
-//                case R.styleable.CustomeImageView_imgScaleType:
-//                    mImageScaleType = a.getInt(R.styleable.CustomeImageView_imgScaleType, 0);
-//                    break;
-//                case R.styleable.CustomeImageView_titleText:
-//                    mTitleText = a.getString(R.styleable.CustomeImageView_titleText);
-//                    break;
-//                case R.styleable.CustomeImageView_titleTextColor:
-//                    mTitleTextColor = a.getColor(R.styleable.CustomeImageView_titleTextColor, 0);
-//                    break;
-//                case R.styleable.CustomeImageView_titleTextSize:
-//                    mTitleTextSize = a.getDimension(R.styleable.CustomeImageView_titleTextSize, 14f);
-//                    break;
-//            }
-//        }
+        a = getContext().obtainStyledAttributes(attrs, R.styleable.CustomeImageView, defStyleAttr, 0);
+        int index = a.getIndexCount();
+        for(int i=0; i < index; i ++){
+            int attr = a.getIndex(i);
+            switch (attr){
+                case R.styleable.CustomeImageView_img:
+                    mBitmap = BitmapFactory.decodeResource(getResources(), a.getResourceId(R.styleable.CustomeImageView_img, 0));
+                    break;
+                case R.styleable.CustomeImageView_imgScaleType:
+                    mImageScaleType = a.getInt(R.styleable.CustomeImageView_imgScaleType, 0);
+                    break;
+                case R.styleable.CustomeImageView_titleText:
+                    mTitleText = a.getString(R.styleable.CustomeImageView_titleText);
+                    break;
+                case R.styleable.CustomeImageView_titleTextColor:
+                    mTitleTextColor = a.getColor(R.styleable.CustomeImageView_titleTextColor, 0);
+                    break;
+                case R.styleable.CustomeImageView_titleTextSize:
+                    mTitleTextSize = a.getDimension(R.styleable.CustomeImageView_titleTextSize, 14f);
+                    break;
+            }
+        }
         a.recycle();
 
         //初始化Paint及一些前提条件

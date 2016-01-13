@@ -1,18 +1,42 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin">
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
 
-    <!--
     <com.likefunnythings.androidtest.view.CustomeImageView
-        android:layout_width="300dp"
-        android:layout_height="300dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
         app:titleText="Hell World"
         app:titleTextColor="#ff0000"
         app:titleTextSize="24sp"
-        app:img="@drawable/ic_launcher"/>
-     -->
+        app:img="@drawable/ic_launcher"
+        app:imgScaleType="fitXY"/>
 
-</RelativeLayout>
+    <com.likefunnythings.androidtest.view.CustomeImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        app:titleText="Hell"
+        app:titleTextColor="#ff0000"
+        app:titleTextSize="12sp"
+        app:img="@drawable/ic_launcher"
+        app:imgScaleType="fitXY"/>
+    <com.likefunnythings.androidtest.view.CustomeImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        app:titleText="Hell Hell Hell Hell Hell Hell Hell Hell Hell "
+        app:titleTextColor="#ff0000"
+        app:titleTextSize="24sp"
+        app:img="@drawable/ic_launcher"
+        app:imgScaleType="fitXY"/>
+
+</LinearLayout>

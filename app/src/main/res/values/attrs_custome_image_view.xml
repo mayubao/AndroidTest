@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!--
+    <attr name="img" format="reference"/>
+    <attr name="imgScaleType" >
+        <enum name="fitXY" value="0" />
+        <enum name="center" value="1" />
+    </attr>
+    <attr name="titleText" format="string"/>
+    <attr name="titleTextColor" format="color"/>
+    <attr name="titleTextSize" format="dimension"/>
+
     <declare-styleable name="CustomeImageView">
-        <attr name="img" format="reference"/>
-        <attr name="imgScaleType" >
-            <enum name="fitXY">0</enum>
-            <enum name="center">1</enum>
-        </attr>
-        <attr name="titleText" format="string"/>
-        <attr name="titleTextColor" format="color"/>
-        <attr name="titleTextSize" format="dimension"/>
+        <attr name="img"/>
+        <attr name="imgScaleType" />
+        <attr name="titleText"/>
+        <attr name="titleTextColor" />
+        <attr name="titleTextSize"/>
     </declare-styleable>
-    -->
 </resources>
